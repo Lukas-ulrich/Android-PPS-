@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart Priority\nNotifier"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wichtige Nachrichten kommen immer durch"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Status Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/statusCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/status_inactive_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/statusIcon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_warning"
+                    android:layout_marginEnd="12dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/statusText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berechtigung fehlt"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/status_inactive_text"/>
+
+                    <TextView
+                        android:id="@+id/statusSubtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tippe auf 'Berechtigung erteilen'"
+                        android:textSize="13sp"
+                        android:textColor="@color/text_secondary"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Permission Button (only shown if needed) -->
+        <Button
+            android:id="@+id/btnPermission"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Berechtigung erteilen"
+            android:textSize="16sp"
+            android:backgroundTint="@color/accent_orange"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+        <!-- Settings Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/card_background"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Einstellungen"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Master Switch -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Filter aktiv"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nachrichten werden überwacht"
+                            android:textSize="13sp"
+                            android:textColor="@color/text_secondary"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchEnabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"/>
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- Sender Name -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kontaktname"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginBottom="8dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="z.B. Lea oder Partnerin"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusTopStart="12dp"
+                    app:boxCornerRadiusTopEnd="12dp"
+                    app:boxCornerRadiusBottomStart="12dp"
+                    app:boxCornerRadiusBottomEnd="12dp"
+                    android:layout_marginBottom="24dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSenderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:textSize="16sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Vibration -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vibration"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Auch im Nachtmodus / DND"
+                            android:textSize="13sp"
+                            android:textColor="@color/text_secondary"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchVibration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"/>
+                </LinearLayout>
+
+                <!-- Sound -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alarm-Ton"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Überschreibt Lautlos-Modus"
+                            android:textSize="13sp"
+                            android:textColor="@color/text_secondary"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchSound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"/>
+                </LinearLayout>
+
+                <!-- Volume -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lautstärke"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"/>
+
+                    <TextView
+                        android:id="@+id/tvVolumeValue"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:text="80%"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/accent_orange"
+                        android:textAlignment="textEnd"/>
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/seekVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="80"
+                    android:progressTint="@color/accent_orange"
+                    android:thumbTint="@color/accent_orange"
+                    android:layout_marginBottom="4dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Einstellungen speichern"
+            android:textSize="16sp"
+            android:backgroundTint="@color/accent_orange"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Test-Alarm auslösen"
+            android:textSize="16sp"
+            android:backgroundTint="@color/card_background"
+            android:textColor="@color/accent_orange"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+        <!-- Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ℹ️ Der exakte Kontaktname muss mit dem Namen in WhatsApp übereinstimmen. Bei Gruppen-Chats: Schreibe den Namen des Kontakts, nicht den Gruppenname."
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
+</ScrollView>
