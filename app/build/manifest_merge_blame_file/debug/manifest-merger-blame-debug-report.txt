@@ -1,0 +1,209 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.smartnotifier"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:4:5-66
+11-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:4:22-63
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:5:5-81
+12-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:5:22-78
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:6:5-77
+13-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:6:22-74
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:7:5-68
+14-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:7:22-65
+15    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+15-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:8:5-81
+15-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:8:22-78
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:9:5-77
+16-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:9:22-74
+17
+18    <permission
+18-->[androidx.core:core:1.12.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\6083c38064f7f0e2055b1ee8be920f5b\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+19        android:name="com.smartnotifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+19-->[androidx.core:core:1.12.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\6083c38064f7f0e2055b1ee8be920f5b\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+20        android:protectionLevel="signature" />
+20-->[androidx.core:core:1.12.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\6083c38064f7f0e2055b1ee8be920f5b\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+21
+22    <uses-permission android:name="com.smartnotifier.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+22-->[androidx.core:core:1.12.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\6083c38064f7f0e2055b1ee8be920f5b\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+22-->[androidx.core:core:1.12.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\6083c38064f7f0e2055b1ee8be920f5b\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+23
+24    <application
+24-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:11:5-63:19
+25        android:allowBackup="true"
+25-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:12:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.12.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\6083c38064f7f0e2055b1ee8be920f5b\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="false"
+29        android:icon="@drawable/ic_launcher"
+29-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:13:9-45
+30        android:label="@string/app_name"
+30-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:14:9-41
+31        android:roundIcon="@drawable/ic_launcher"
+31-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:15:9-50
+32        android:supportsRtl="true"
+32-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:16:9-35
+33        android:testOnly="true"
+34        android:theme="@style/Theme.SmartNotifier" >
+34-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:17:9-51
+35
+36        <!-- Main Activity -->
+37        <activity
+37-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:20:9-28:20
+38            android:name="com.smartnotifier.MainActivity"
+38-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:21:13-41
+39            android:exported="true"
+39-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:22:13-36
+40            android:label="@string/app_name" >
+40-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:23:13-45
+41            <intent-filter>
+41-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:24:13-27:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:25:17-69
+42-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:25:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:26:17-77
+44-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:26:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <!-- Notification Listener Service -->
+49        <service
+49-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:31:9-42:19
+50            android:name="com.smartnotifier.NotificationListener"
+50-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:32:13-49
+51            android:exported="true"
+51-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:33:13-36
+52            android:label="Smart Priority Notifier"
+52-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:34:13-52
+53            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+53-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:35:13-87
+54            <intent-filter>
+54-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:36:13-38:29
+55                <action android:name="android.service.notification.NotificationListenerService" />
+55-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:37:17-99
+55-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:37:25-96
+56            </intent-filter>
+57
+58            <meta-data
+58-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:39:13-41:37
+59                android:name="android.notificationlistener.notification_listener_service_hint"
+59-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:40:17-95
+60                android:value="3" />
+60-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:41:17-34
+61        </service>
+62
+63        <!-- Auto-start after reboot -->
+64        <receiver
+64-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:45:9-52:20
+65            android:name="com.smartnotifier.BootReceiver"
+65-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:46:13-41
+66            android:exported="true" >
+66-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:47:13-36
+67            <intent-filter android:priority="999" >
+67-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:48:13-51:29
+67-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:48:28-50
+68                <action android:name="android.intent.action.BOOT_COMPLETED" />
+68-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:49:17-79
+68-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:49:25-76
+69                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+69-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:50:17-82
+69-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:50:25-79
+70            </intent-filter>
+71        </receiver>
+72
+73        <!-- Test Alert Receiver -->
+74        <receiver
+74-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:55:9-61:20
+75            android:name="com.smartnotifier.TestAlertReceiver"
+75-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:56:13-46
+76            android:exported="false" >
+76-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:57:13-37
+77            <intent-filter>
+77-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:58:13-60:29
+78                <action android:name="com.smartnotifier.TEST_ALERT" />
+78-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:59:17-71
+78-->E:\app\SmartPriorityNotifier\app\src\main\AndroidManifest.xml:59:25-68
+79            </intent-filter>
+80        </receiver>
+81
+82        <provider
+82-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\bcaaa7ef7b7a081193b8a2e895e3557c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+83            android:name="androidx.startup.InitializationProvider"
+83-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\bcaaa7ef7b7a081193b8a2e895e3557c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+84            android:authorities="com.smartnotifier.androidx-startup"
+84-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\bcaaa7ef7b7a081193b8a2e895e3557c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+85            android:exported="false" >
+85-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\bcaaa7ef7b7a081193b8a2e895e3557c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+86            <meta-data
+86-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\bcaaa7ef7b7a081193b8a2e895e3557c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+87                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+87-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\bcaaa7ef7b7a081193b8a2e895e3557c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+88                android:value="androidx.startup" />
+88-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\bcaaa7ef7b7a081193b8a2e895e3557c\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+89            <meta-data
+89-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\2b0cf44cafeed8e43950e12940fc69ec\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+90-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\2b0cf44cafeed8e43950e12940fc69ec\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+91                android:value="androidx.startup" />
+91-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\2b0cf44cafeed8e43950e12940fc69ec\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+93                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+94                android:value="androidx.startup" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+95        </provider>
+96
+97        <receiver
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+98            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+99            android:directBootAware="false"
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+100            android:enabled="true"
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+101            android:exported="true"
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+102            android:permission="android.permission.DUMP" >
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+104                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+105            </intent-filter>
+106            <intent-filter>
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+107                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+108            </intent-filter>
+109            <intent-filter>
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+110                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+111            </intent-filter>
+112            <intent-filter>
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+113                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\lordl\.gradle\caches\9.0.0\transforms\b26eb95801b465494d6f3d699b558ac7\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+114            </intent-filter>
+115        </receiver>
+116    </application>
+117
+118</manifest>
